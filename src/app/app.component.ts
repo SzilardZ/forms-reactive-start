@@ -21,6 +21,24 @@ export class AppComponent implements OnInit {
       'gender': new FormControl('male'),
       'hobbies': new FormArray([]),
     });
+
+    // log if change or status has changed in our form
+    // this.signupForm.valueChanges.subscribe(
+    //   (value) => console.log(value)
+    // );
+    // this.signupForm.statusChanges.subscribe(
+    //   (value) => console.log(value)
+    // );
+
+    // set default value for our form
+    // this.signupForm.setValue({
+    //   'userData': {
+    //     'username': 'Max',
+    //     'email': 'max@text.com',
+    //   },
+    //   'gender': 'male',
+    //   'hobbies': [],
+    // });
   }
 
   onSubmit() {
